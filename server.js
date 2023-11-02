@@ -12,7 +12,7 @@ const songRoute = require("./routes/song");
 
 connectDB();
 
-app.use(cors({ origin: "*" }));
+app.use(cors({ origin: "https://musicpad.onrender.com" }));
 
 app.use(bodyParser.json({ limit: "50mb" }));
 app.use(bodyParser.urlencoded({ extended: false, limit: "50mb" }));
